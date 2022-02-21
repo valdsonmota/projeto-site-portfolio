@@ -10,7 +10,7 @@ body {
 
 main {
     background-color: whitesmoke;
-    width: 700px;
+    width: 500px;
     margin: auto;
     padding: 10px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.450);
@@ -28,15 +28,4 @@ h2 {
 
 img.alinhamento {
     float: right;
-}
-
-a {
-    text-decoration: none;
-    font-weight: bold;
-    color: blue(26, 26, 105);
-}
-
-a:hover {
-    text-decoration: underline;
-    color: blue(26, 26, 105);
 }
