@@ -30,6 +30,13 @@ img.alinhamento {
     float: right;
 }
 
+img.centro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.450);
+}
+
 a {
     text-decoration: none;
     font-weight: bold;
