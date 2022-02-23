@@ -1,0 +1,49 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: gray;
+ 
+}
+
+main {
+    background-color: whitesmoke;
+    width: 560px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.450);
+}
+
+h1 {
+    font-size: 1cm;
+    color: rgb(26, 26, 105);
+}
+
+h2 {
+    font-size: 0.5cm;
+    color: rgb(26, 26, 105);
+    }
+
+img.alinhamento {
+    float: right;
+}
+
+img.centro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.450);
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: blue(26, 26, 105);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue(26, 26, 105);
+}
