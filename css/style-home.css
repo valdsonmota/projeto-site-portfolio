@@ -26,18 +26,18 @@ h2 {
     color: rgb(26, 26, 105);
     }
 
-img.alinhamento {
+img.right {
     float: right;
 }
 
-img.centro {
+img.center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.450);
 }
 
-.justificado {
+.justify {
     text-align: justify;
 }
 
