@@ -10,28 +10,142 @@
 <body>
     <main>
         <header>
-            <h1>Chapter 02</h1>
+            <h1>
+                <a href="https://github.com/valdsonmota/python-studies/tree/main/python_crash_course/chapter_01" target="_blank"><img src="../imgs/github_chapter_01.png" alt="GitHub - Chapter 02"></a>               
+            </h1>
         </header>
         <article>
             <hr color="#c9d1e4" />
-            <h2>Exercise 2-1 - </h2>
-            <p><b><pre><code>
-
-            </code></pre></b></p>
+            <h2>Exercise 2-1 - Simple Message</h2>
+            <p><pre><code>
+        message = 'Russia invades Ukraine'
+        print(message)
+            </code></pre></p>
         </article>
         <article>
             <hr color="#c9d1e4" />
-            <h2>Exercise 2-2 - </h2>
-            <p><b><pre><code>
-
-            </code></pre></b></p>
+            <h2>Exercise 2-2 - Simple Messages</h2>
+            <p><pre><code>
+        message = 'Innocent people die in wars'
+        print(message)
+            </code></pre></p>
         </article>
         <article>
             <hr color="#c9d1e4" />
-            <h2>Exercise 2-3 - </h2>
-            <p><b><pre><code>
-
-            </code></pre></b></p>
+            <h2>Exercise 2-3 - Personal message</h2>
+            <p><pre><code>
+        name = 'valdson mota'
+        print('Hi', name.title())
+        print("if you don't pay for the product, then you're the product.")
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 2-4 - Name Cases</h2>
+            <p><pre><code>
+        name = 'vaLdson moTa'
+        print('Lowercase:', name.lower())
+        print('Uppercase:', name.upper())
+        print('First uppercase letters:', name.title())
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 2-5 - Famous Quote</h2>
+            <p><pre><code>
+    print("Leandro Karnal: I can only be offended if I don't know myself.")
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 2-6 - Famous Quote 2</h2>
+            <p><pre><code>
+        famous_person = 'leandro karnal'
+        massage = "I can only be offended if I don't know myself."
+        print(famous_person.title(), ':', '"', massage, '"')
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 2-7 - Stripping Names</h2>
+            <p><pre><code>
+        name = ' valdson mota '
+        print('\n\t1° -', name, '-')
+        print('\n\t2° -', name.rstrip(), '-')
+        print('\n\t3° -', name.lstrip(), '-')
+        print('\n\t4° -', name.strip(), '-')
+        print('-' * 50)
+        language = ' python '
+        print('\n\t1° -', language, '- Normal')
+        print('\n\t2° -', language.rstrip(), '- Remove right whitespace')
+        print('\n\t3° -', language.lstrip(), '- Remove left whitespace')
+        print('\n\t4° -', language.strip(), '- Remove both whitespace')
+        '''
+        The Strings (rstrip, lstrip and strip) only revolves from the display, 
+        to permanently remove it you must store the value with the removed 
+        character back in the variable.
+        '''
+        print('\n\t5° -', language, '- normal')
+        #Now whitespace has been permanently removed in the variable
+        language = language.strip()
+        print('\n\t6° -', language, '- Updated')
+            </code></pre></p>
+        </article>          
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 2-8 - Number Eight</h2>
+            <p><pre><code>
+        print(2 + 6)
+        print(40 - 32)
+        print(2 * 4)
+        print(16 / 2)
+            </code></pre></p>
+        </article>        
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 2-9 - Favorite number</h2>
+            <p><pre><code>
+        num = 81
+        print('My favorite number is', num)
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>#Exercise 2-10 - Adding Comments</h2>
+            <p><pre><code>
+        #Comment - Say hello to everyone.
+        print('Hello Python people!')
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 2-11 - Zen of Python</h2>
+            <p><pre><code>
+    import this
+    '''
+    The Zen of Python, by Tim Peters
+    
+    Beautiful is better than ugly.
+    Explicit is better than implicit.
+    Simple is better than complex.
+    Complex is better than complicated.
+    Flat is better than nested.
+    Sparse is better than dense.
+    Readability counts.
+    Special cases aren't special enough to break the rules.
+    Although practicality beats purity.
+    Errors should never pass silently.
+    Unless explicitly silenced.
+    In the face of ambiguity, refuse the temptation to guess.
+    There should be one-- and preferably only one --obvious way to do it.
+    Although that way may not be obvious at first unless you're Dutch.
+    Now is better than never.
+    Although never is often better than *right* now.
+    If the implementation is hard to explain, it's a bad idea.
+    If the implementation is easy to explain, it may be a good idea.
+    Namespaces are one honking great idea -- let's do more of those!
+    '''
+            </code></pre></p>
         </article>
         <article>
             <h2></h2>
