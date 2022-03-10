@@ -16,23 +16,254 @@
         </header>
         <article>
             <hr color="#c9d1e4" />
-            <h2>Exercise 3-1 - </h2>
+            <h2>Exercise 3-1 - Names </h2>
             <p><b><pre><code>
-
+        friends = ['thiago', 'ricardo', 'rodolfo', 'jailson']
+        print(friends[0].title())
+        print(friends[1].title())
+        print(friends[2].title())
+        print(friends[3].title())
             </code></pre></b></p>
         </article>
         <article>
             <hr color="#c9d1e4" />
-            <h2>Exercise 3-2 - </h2>
+            <h2>Exercise 3-2 - Greetings </h2>
             <p><b><pre><code>
-
+        friends = ['thiago', 'ricardo', 'rodolfo', 'jailson']
+        print(friends[0].title() + ' - Known as THOLDER')
+        print(friends[1].title() + ' - Known as FoM')
+        print(friends[3].title() + ' - Known as Skol')
+        print(friends[2].title() + ' - Lives in the state of Paraíba')
             </code></pre></b></p>
         </article>
         <article>
             <hr color="#c9d1e4" />
-            <h2>Exercise 3-3 - </h2>
+            <h2>Exercise 3-3 - Your Own List</h2>
             <p><b><pre><code>
-
+        dji = ['DJI Mavic 3', 'DJI Air 2S', 'DJI Mini 2', 'DJI Mini SE', 'DJI FPV', 'Phantom 4 Pro', 'Phantom 4 Pro V2.0', 'Inspire 2']
+        print('Series Mavic:\n\t', dji[0])
+        print('Series Air\n\t', dji[1])
+        print('Series Mini\n\t', dji[2], '\n\t', dji[3])
+        print('Series FPV\n\t', dji[4])
+        print('Series Phantom\n\t', dji[5], '\n\t', dji[6])
+        print('Series Inspire\n\t', dji[7])
+            </code></pre></b></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 3-4 - Guest List</h2>
+            <p><b><pre><code>
+        guests = ['thiago', 'ricardo', 'rodolfo']
+        print('Dinner guest list')
+        print('-' * 50)
+        print('Hello', guests[0].title() + ",", 'I would like to invite you to dinner next weekend at my beach house.')
+        print('Hello', guests[1].title() + ",", 'I would like to invite you to dinner next weekend at my beach house.')
+        print('Hello', guests[2].title() + ",", 'I would like to invite you to dinner next weekend at my beach house.')
+        print('-' * 50)
+        print(guests) #Full list
+            </code></pre></b></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 3-5 - Changing Guest List</h2>
+            <p><b><pre><code>
+        guests = ['thiago', 'ricardo', 'rodolfo']
+        print('Dinner guest list')
+        print('-' * 50)
+        print(guests[0].title(), '- Answered the invitation.')
+        print(guests[1].title(), '- Invitation sent.')
+        print(guests[2].title(), '- Invitation sent.')
+        #Removing Thiago from the list
+        dropout_guests = guests.pop(0)
+        print('-' * 50)
+        print(dropout_guests.title(), 'will not be able to attend the dinner.')
+        print('-' * 50)
+        #Adding new guest to the list.
+        print('New guest:')
+        print('-' * 50)
+        guests.append('vinicius')
+        print('Hello', guests[2].title() + ",", 'I would like to invite you to dinner next weekend at my beach house.')
+        print('-' * 50)
+        #New full dinner guest list
+        print('New dinner guest list')
+        print('-' * 50)
+        print(guests[0].title(), '- Invitation sent.')
+        print(guests[1].title(), '- Invitation sent.')
+        print(guests[2].title(), '- Invitation sent.')
+        print('-' * 50)
+        print(guests) #Full list
+            </code></pre></b></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 3-6 - More Guests</h2>
+            <p><b><pre><code>
+        guests = ['ricardo', 'rodolfo', 'vinicius']
+        print('Current dinner guest list')
+        print('-' * 50)
+        print(guests[0].title(), '- Confirmed')
+        print(guests[1].title(), '- Confirmed')
+        print(guests[2].title(), '- Confirmed')
+        print('-' * 50)
+        #Adding new guests to the list.
+        guests.append('jailson')
+        guests.append('miguel')
+        guests.append('raphael')
+        print('Updated dinner guest list.')
+        print('-' * 50)
+        print('Hello', guests[3].title() + ',', 'I would like to invite you to dinner next weekend at my beach house.')
+        print('Hello', guests[4].title() + ',', 'I would like to invite you to dinner next weekend at my beach house.')
+        print('Hello', guests[5].title() + ',', 'I would like to invite you to dinner next weekend at my beach house.')
+        print('-' * 50)
+        print('New dinner guest list')
+        print('-' * 50)
+        print(guests) #Full list
+            </code></pre></b></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 3-7_1 - Shrinking Guest List</h2>
+            <p><b><pre><code>
+        guests = ['ricardo', 'rodolfo', 'vinicius', 'jailson', 'miguel', 'raphael']
+        print('>' * 21, 'NOTICE', '<' * 21)
+        print('')
+        print('Dear guests', guests[0].title() + ',', guests[1].title() + ',', guests[2].title() + ',', guests[3].title() + ',', guests[4].title(), 'and', guests[5].title() + '!' + '\n\nDue to a problem with the custom furniture factory, I will have to reduce the list to just two guests. My apologies!')
+        print('-' * 50)
+        invitation_canceled = guests.pop(0)
+        print('Sorry', invitation_canceled.title() + ',', 'your invitation has been cancelled.')
+        invitation_canceled = guests.pop(0)
+        print('Sorry', invitation_canceled.title() + ',', 'your invitation has been cancelled.')
+        invitation_canceled = guests.pop(1)
+        print('Sorry', invitation_canceled.title() + ',', 'your invitation has been cancelled.')
+        invitation_canceled = guests.pop(2)
+        print('Sorry', invitation_canceled.title() + ',', 'your invitation has been cancelled.')
+        print('-' * 50)
+        print('Update dinner guest list')
+        print('-' * 50)
+        print('Hi', guests[0].title() + ',', 'your invitation remains confirmed.')
+        print('Hi', guests[1].title() + ',', 'your invitation remains confirmed.')
+        print('-' * 50)
+        print(guests) #Full list
+            </code></pre></b></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 3-7_2 - Shrinking Guest List</h2>
+            <p><b><pre><code>
+        guests = ['vinicius', 'miguel']
+        print('>' * 18, 'CANCELLATION', '<' * 18)
+        print('')
+        print('Dear guests', guests[0].title(), 'and', guests[1].title() + '!' + '\n\nDinner was completely cancelled.')
+        print('-' * 50)
+        del guests[0]
+        del guests[0]
+        print('All invites cancelled.')
+        print('-' * 50)
+        print(guests) #Full list
+            </code></pre></b></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 3-8 - Seeing the World</h2>
+            <p><b><pre><code>
+        cities = ['bariloche', 'machu picchu', 'auckland', 'lisboa', 'madrid', 'paris', 'bruxelas', 'londres', 'dublin', 'toronto']
+        #List in original order
+        print('List in original order')
+        print(cities)
+        print('-' * 115)
+        #Temporary alphabetical order list.
+        print('Alphabetical order without changing the original list')
+        print(sorted(cities))
+        print('-' * 115)
+        #Temporary reverse alphabetical order list.
+        print('Reverse alphabetical order without changing the original list')
+        print(sorted(cities, reverse=True))
+        print('-' * 115)
+        #List in original order
+        print('List in original order')
+        print(cities)
+        print('-' * 115)
+        #Invertive original list
+        print('Invertive original list')
+        cities.reverse()
+        print(cities)
+        print('-' * 115)
+        #Reversing the original list again.
+        print('Reversing the original list again.')
+        cities.reverse()
+        print(cities)
+        print('-' * 115)
+        #List in alphabetical order permanently.
+        print('List in alphabetical order permanently.')
+        cities.sort()
+        print(cities)
+            </code></pre></b></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 3-9 - Dinner Guests</h2>
+            <p><b><pre><code>
+        guests = ['ricardo', 'rodolfo', 'vinicius', 'jailson', 'miguel', 'raphael']
+        print('DINNER GUEST LIST')
+        print('-' * 40)
+        print('Numbers of people invited to dinner:', len(guests))
+        print('-' * 40)
+            </code></pre></b></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 3-10 - Every Function</h2>
+            <p><b><pre><code>
+        print('-' * 10, 'Trips', '-' * 10)
+        places = ['australia', 'united states', 'canada']
+        print('Number of records in the list:', len(places))
+        print(sorted(places))
+        print('-' * 30)
+        #Adding cities
+        places.append('brisbane')
+        places.append('sydney')
+        places.append('melbourne')
+        print(places[0].title(), '- We met in 2017.')
+        print('\t', places[3].title())
+        print('\t', places[4].title())
+        print('\t', places[5].title())
+        print('-' * 30)
+        print('Number of records in the list:', len(places))
+        print('-' * 30)
+        #Adding cities
+        places.append('new york')
+        places.append('houston')
+        print(places[1].title(), '- We met in 2019.')
+        print('\t', places[6].title())
+        print('\t', places[7].title())
+        print('-' * 30)
+        print('Number of records in the list:', len(places))
+        print('-' * 30)
+        #Adding cities
+        places.append('vancouver')
+        places.append('victoria')
+        places.append('toronto')
+        print(places[2].title(), '- We met in 2019.')
+        print('\t', places[8].title())
+        print('\t', places[9].title())
+        print('\t', places[10].title())
+        print('-' * 30)
+        #Full list
+        print('Number of records in the list:', len(places))
+        print('\n', sorted(places))
+        print('-' * 30)
+        print("I haven't seen the city of", places[10].title(), 'yet.')
+        del places[10]
+        print('-' * 30)
+        print('Updating cities in canada')
+        print('-' * 30)
+        print(places[2].title(), '- We met in 2019.')
+        print('\t', places[8].title())
+        print('\t', places[9].title())
+        print('-' * 30)
+        print('Number of records in the list:', len(places))
+        print('\n', sorted(places))
+        print('-' * 30)
             </code></pre></b></p>
         </article>
         <article>
