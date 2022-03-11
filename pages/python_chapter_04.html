@@ -38,79 +38,144 @@
         </article>
         <article>
             <hr color="#c9d1e4" />
-            <h2>Exercise 4-3 - </h2>
+            <h2>Exercise 4-3 - Counting to twenty</h2>
             <p><pre><code>
-
+        for value in range(1,21):
+        print(value)
             </code></pre></p>
         </article>
         <article>
             <hr color="#c9d1e4" />
-            <h2>Exercise 4-4 - </h2>
+            <h2>Exercise 4-4 - One Million</h2>
             <p><pre><code>
-
+        numbers = list(range(1,1000001))
+        print(numbers)
             </code></pre></p>
         </article>
         <article>
             <hr color="#c9d1e4" />
-            <h2>Exercise 4-5 - </h2>
+            <h2>Exercise 4-5 - Summing a Million</h2>
             <p><pre><code>
-
+        numbers = list(range(1,1000001))
+        print('-' * 55)
+        print('The lowest value is:', min(numbers))
+        print('\nThe highest value is:', max(numbers))
+        print('\nThe sum of all the numbers in the list is:', sum(numbers))
+        print('-' * 55)
             </code></pre></p>
         </article>
         <article>
             <hr color="#c9d1e4" />
-            <h2>Exercise 4- - </h2>
+            <h2>Exercise 4-6 - Odd Numbers</h2>
             <p><pre><code>
-
+        odd_numbers = []
+        for odd in range(1, 21, 2):
+            odd_numbers.append(odd)
+        print(odd_numbers)
             </code></pre></p>
         </article>
         <article>
             <hr color="#c9d1e4" />
-            <h2>Exercise 4- - </h2>
+            <h2>Exercise 4-7 - Threes</h2>
             <p><pre><code>
-
+        multiples = []
+        for three in range(3, 31, 3):
+            multiples.append(three)
+        print(multiples)
             </code></pre></p>
         </article>
         <article>
             <hr color="#c9d1e4" />
-            <h2>Exercise 4- - </h2>
+            <h2>Exercise 4-8 - Cubes</h2>
             <p><pre><code>
-
+        cubes = []
+        for num in range(1,11):
+            cube = num**3
+            cubes.append(cube)
+        print(cubes)
             </code></pre></p>
         </article>
         <article>
             <hr color="#c9d1e4" />
-            <h2>Exercise 4- - </h2>
+            <h2>Exercise 4-9 - Cube Comprehension</h2>
             <p><pre><code>
-
+        cubes = [num**3 for num in range(1,11)]
+        print(cubes)
             </code></pre></p>
         </article>
         <article>
             <hr color="#c9d1e4" />
-            <h2>Exercise 4- - </h2>
+            <h2>Exercise 4-10 - Slices</h2>
             <p><pre><code>
-
+        slices = [slice for slice in range(1,21)]
+        print('Full list\n', slices)
+        print('\nThe first three numbers on the list are:\n', slices[:3])
+        print('\nThe three numbers in the middle of the list are:\n', slices[8:11])
+        print('\nThe last three numbers on the list are:\n', slices[-3:])
             </code></pre></p>
         </article>
         <article>
             <hr color="#c9d1e4" />
-            <h2>Exercise 4- - </h2>
+            <h2>Exercise 4-11 - My Pizzas, Your Pizzas</h2>
             <p><pre><code>
-
+        my_pizzas = ['portuguese', 'pepperoni', 'mozzarella']
+        friend_pizzas = my_pizzas[:]
+        print('My favorite pizzas are:')
+        for my in my_pizzas:
+            print('\t', my.title())
+        print("\nMy friend's favorite pizzas are:")
+        for friend in friend_pizzas:
+            print('\t', friend.title())
+        print("\nNow I'm going to add a new pizza to each list.")
+        my_pizzas.append('margherita')
+        friend_pizzas.append('napolitana')
+        print('\nMy favorite pizzas update are:')
+        for my in my_pizzas:
+            print('\t', my.title())
+        print("\nMy friend's favorite pizzas update are:")
+        for friend in friend_pizzas:
+            print('\t', friend.title())
             </code></pre></p>
         </article>
         <article>
             <hr color="#c9d1e4" />
-            <h2>Exercise 4- - </h2>
+            <h2>Exercise 4-12 - More Loops</h2>
             <p><pre><code>
-
+        foods = ['pizza', 'falafel', 'carrot cake', 'cannoli']
+        friend_foods = ['pizza', 'falafel', 'carrot cake', 'ice cream']
+        print("Eric Matthes' favorite foods:")
+        for food in foods:
+            print('\t', food.title())
+        print("\nEric Matthes' friend's favorite foods:")
+        for friend in friend_foods:
+            print('\t', friend.title())
             </code></pre></p>
         </article>
         <article>
             <hr color="#c9d1e4" />
-            <h2>Exercise 4- - </h2>
+            <h2>Exercise 4-13 - Buffet</h2>
             <p><pre><code>
-
+        foods = ('roast beef', 'omelet', 'fried fish', 'noodle', 'chicken rice')
+        print('-' * 5, 'MENU', '-' * 5)
+        for food in foods:
+            print(food.title())
+        
+        #foods[2] = 'fried chicken'
+        
+        '''
+        Cannot modify a value in the tuple.
+        
+        Traceback (most recent call last):
+            File "c:\python_crash_course\chapter_04\042_buffet.py", line 7, in <module>
+            foods[2] = 'fried chicken'
+        TypeError: 'tuple' object does not support item assignment
+        '''
+        
+        #To modify a tuple, it is necessary to completely redefine it.
+        foods = ('roast beef', 'omelet', 'fried chicken', 'fried rice', 'chicken rice')
+        print('\n' + '-' * 5, 'NEW MENU', '-' * 5)
+        for food in foods:
+            print(food.title())
             </code></pre></p>
         </article>
         <article>
