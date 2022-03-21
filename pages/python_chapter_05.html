@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python - Valdson Mota</title>
+    <img class="center" src="../front/python_pages.png" alt="Top">
+    <link rel="stylesheet" href="../css/style-pages.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>
+                <a href="https://github.com/valdsonmota/python-studies/tree/main/python_crash_course/chapter_05" target="_blank"><img src="../imgs/Github_chapter_05.png" alt="GitHub - Chapter 05"></a>               
+            </h1>
+        </header>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 5-1.1 Conditional Tests</h2>
+            <p><pre><code>
+        brand = 'dji'
+        models = ['mavic 3', 'air 2s', 'mini 2', 'mini se', 'fpv', 'phantom 4 pro', 'phantom 4 pro v2.0', 'inspire 2']
+        for model in models:
+            if model.lower() == 'fpv':
+                print(brand.upper(), model.upper())
+            else:
+                print(brand.upper(), model.title())
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 5-1.2 - Conditional Tests</h2>
+            <p><pre><code>
+        brand = 'dji'
+        models = ['mavic 3', 'air 2s', 'mini 2', 'mini se', 'fpv', 'phantom 4 pro', 'phantom 4 pro v2.0', 'inspire 2']
+        new_model = 'mini 3'
+        if new_model.lower() not in models:
+            print('\n' + brand.upper(), new_model.title(), 'NOT registered in the list of models.\n')
+        else:
+            print('\n' + brand.upper(), new_model, 'already registered in the list of models.\n')
+            </code></pre></p>
+        </article>
+        <article>
+            <h2></h2>
+            <a href="python-studies.html"><img src="../imgs/botao_voltar.png" alt="Voltar"></a>
+        </article>
+    </main>
+    <img class="center" src="../front/botton_pages.png" alt="Botton">
+</body>
+</html>
