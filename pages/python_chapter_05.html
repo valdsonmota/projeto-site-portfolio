@@ -41,6 +41,296 @@
             </code></pre></p>
         </article>
         <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 5-2 - More Conditional</h2>
+            <p><pre><code>
+        people = ['claudia', 'vinicius', 'miguel', 'valdson']
+        for person in people:
+            if person == 'claudia':
+                print(person.title(), 'is an adult')
+            elif person == 'vinicius':
+                print(person.title(), 'is an new adult')
+            elif person == 'miguel':
+                print(person.title(), 'is a baby')
+            else:
+                print(person.title(), 'is an old adult.')
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 5-3.1 - Alien Colors</h2>
+            <p><pre><code>
+        alien_color = 'green'
+        if alien_color == 'green':
+            print('You have earned 5 points.')
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 5-3.2 - Alien Colors</h2>
+            <p><pre><code>
+        alien_color = 'yellow'
+        if alien_color == 'green':
+            print('You have earned 5 points.')
+        if alien_color == 'yellow':
+            print('\n')
+        if alien_color == 'red':
+            print('\n')
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 5-4.1 - Alien Colors</h2>
+            <p><pre><code>
+        alien_color = 'green'
+        if alien_color == 'green':
+            print('You have earned 5 points.')
+        else:
+            print('You have earned 10 points.')
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 5-4.2 - Alien Colors</h2>
+            <p><pre><code>
+        alien_color = 'yellow'
+        if alien_color == 'green':
+            print('You have earned 5 points.')
+        else:
+            print('You have earned 10 points.')
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 5-4.3 - </h2>
+            <p><pre><code>
+        alien_color = 'red'
+        if alien_color == 'green':
+            print('You have earned 5 points.')
+        else:
+            print('You have earned 10 points.')
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 5-5.1 - Alien Colors</h2>
+            <p><pre><code>
+        alien_color = 'green'
+        if alien_color == 'green':
+            print('You have earned 5 points.')
+        elif alien_color == 'yellow':
+            print('You have earned 10 points.')
+        elif alien_color == 'red':
+            print('You have earned 15 points.')
+        else:
+            print('That color does not exist.')
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 5-5.2 - Alien Colors</h2>
+            <p><pre><code>
+        alien_color = 'yellow'
+        if alien_color == 'green':
+            print('You have earned 5 points.')
+        elif alien_color == 'yellow':
+            print('You have earned 10 points.')
+        elif alien_color == 'red':
+            print('You have earned 15 points.')
+        else:
+            print('That color does not exist.')
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 5-5.3 - Alien Colors</h2>
+            <p><pre><code>
+        alien_color = 'red'
+        if alien_color == 'green':
+            print('You have earned 5 points.')
+        elif alien_color == 'yellow':
+            print('You have earned 10 points.')
+        elif alien_color == 'red':
+            print('You have earned 15 points.')
+        else:
+            print('That color does not exist.')
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 5-5.4 - Alien Colors</h2>
+            <p><pre><code>
+        alien_color = 'gray'
+        if alien_color == 'green':
+            print('You have earned 5 points.')
+        elif alien_color == 'yellow':
+            print('You have earned 10 points.')
+        elif alien_color == 'red':
+            print('You have earned 15 points.')
+        else:
+            print('That color does not exist.')
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 5-6 - Stage of Life</h2>
+            <p><pre><code>
+                age =  40
+        if age < 2:
+            print('That age is a baby.')
+        elif (age >= 2) and (age < 4):
+            print('That age is a toddler.')
+        elif (age >= 4) and (age < 13):
+            print('That age is a kid.')
+        elif (age >= 13) and (age < 20):
+            print('That age is a teenager.')
+        elif (age >= 20) and (age < 65):
+            print('That age is a adult.')
+        elif (age >= 65) and (age <= 122):
+            print('That age is a elder.')
+        else:
+            print('That age is a alien.')
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 5-7 - Favorite Fruit</h2>
+            <p><pre><code>
+        favorite_fruits = ['appel', 'pineappel', 'grape']
+        fruit = 'appel'
+        if fruit in favorite_fruits:
+            print('You really like', fruit.title() + '!')
+        else:
+            print(fruit.title(), 'is not a favorite fruit.')
+        
+        fruit = 'banana'
+        if fruit in favorite_fruits:
+            print('You really like', fruit.title() + '!')
+        else:
+            print(fruit.title(), 'is not a favorite fruit.')
+        
+        fruit = 'pineappel'
+        if fruit in favorite_fruits:
+            print('You really like', fruit.title() + '!')
+        else:
+            print(fruit.title(), 'is not a favorite fruit.')
+        
+        fruit = 'watermelon'
+        if fruit in favorite_fruits:
+            print('You really like', fruit.title() + '!')
+        else:
+            print(fruit.title(), 'is not a favorite fruit.')
+        
+        fruit = 'grape'
+        if fruit in favorite_fruits:
+            print('You really like', fruit.title() + '!')
+        else:
+            print(fruit.title(), 'is not a favorite fruit.')
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 5-8 - Hello Admin</h2>
+            <p><pre><code>
+        users = ['claudia', 'vinicius', 'miguel', 'valdson', 'admin']
+        for user in users:
+            if user == 'admin':
+                print('Hello', user.title() + ',', 'Welcome Dungeon Master.')
+            else:
+                print('Hello', user.title() + ', thank you for logging in again.')
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 5-9 - Hello Admin</h2>
+            <p><pre><code>
+        users = []
+        if users:
+            for user in users:
+                if user == 'admin':
+                    print('Hello', user.title() + ',', 'Welcome Dungeon Master.')
+                else:
+                    print('Hello', user.title() + ', thank you for logging in again.')
+        else:
+            print('We need to find some users!')
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 5-10 - Checking Usernames</h2>
+            <p><pre><code>
+        current_users = ['claudia', 'vinicius', 'miguel', 'valdson', 'admin']
+        new_users = ['betania', 'everton', 'CLAUDIA', 'ozzy', 'vinicius']
+        for new_user in new_users:
+            if new_user.lower() in current_users:
+                print('The person will need to enter a username other than:', new_user)
+            else:
+                print('The username', new_user, 'is available.')
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 5-11 - Ordinal Numbers</h2>
+            <p><pre><code>
+        ordinal_numbers = list(range(1,10))
+        for ordinal_number in ordinal_numbers:
+            if ordinal_number == 1:
+                print(str(ordinal_number) + 'st')
+            elif ordinal_number == 2:
+                print(str(ordinal_number) + 'nd')
+            elif ordinal_number == 3:
+                print(str(ordinal_number) + 'rd')
+            else:
+                print(str(ordinal_number) + 'th')
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 5-12 - Styling if statements</h2>
+            <p><pre><code>
+        print('Revised programs.')
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 5-13 - Your Ideas - Valdson's Barbecue</h2>
+            <p><pre><code>
+        materials = ['barbecue grill', 'coal', 'lighter', 'tables', 'chairs']
+        foods = ['meats', 'pork sausage', 'garlic bread', 'onion']
+        drinks = ['soda', 'sparkling water', 'wine', 'beer']
+        guests = ['claudia', 'vinicius', 'miguel']
+        checklist = ['coal', 'lighter', 'meats', 'beer', 'miguel']
+        print('-' * 10, 'MATERIAL', '-' * 10)
+        for material in materials:
+            if (material in checklist):
+                print(material.title(), '- Buy')
+            else:
+                print(material.title(), '- I already have')
+        print('-' * 10, 'FOODS', '-' * 10)
+        for food in foods:
+            if food in checklist:
+                print(food.title(), '- Buy')
+            else:
+                print(food.title(), '- I already bought')
+        print('-' * 10, 'DRINKS', '-' * 10)
+        for drink in drinks:
+            if drink == 'sparkling water':
+                print(drink.title(), "- Only buy if it's cheap")    
+            elif drink in checklist:
+                print(drink.title(), '- Buy')
+            else:
+                print(drink.title(), '- I already bought')
+        print('-' * 10, 'GUESTS', '-' * 10)
+        for guest in guests:
+            if guest == 'claudia':
+                print(guest.title(), '- Confirmed')
+            elif guest == 'vinicius':
+                print(guest.title(), '- Waiting confirmation' )
+            elif guest in checklist:
+                print(guest.title(), '- Send invitation')
+            </code></pre></p>
+        </article>
+        <article>
             <h2></h2>
             <a href="python-studies.html"><img src="../imgs/botao_voltar.png" alt="Voltar"></a>
         </article>
