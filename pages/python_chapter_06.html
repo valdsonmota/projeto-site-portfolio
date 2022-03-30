@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python - Valdson Mota</title>
+    <img class="center" src="../front/python_pages.png" alt="Top">
+    <link rel="stylesheet" href="../css/style-pages.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>
+                <a href="https://github.com/valdsonmota/python-studies/tree/main/python_crash_course/chapter_06" target="_blank"><img src="../imgs/Github_chapter_06.png" alt="GitHub - Chapter 06"></a>               
+            </h1>
+        </header>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 6-1 Person</h2>
+            <p><pre><code>
+        person = {
+            'first_name': 'claudia',
+            'last_name': 'santos',
+            'age': '35',
+            'city': 'maceio',
+            }
+        for k, v in person.items():
+            print(
+                k.title() + ':',
+                v.title()
+            )
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 6-2 Favorite Numbers</h2>
+            <p><pre><code>
+        favorite_numbers = {
+            'claudia': 30,
+            'vinicius': 81,
+            'miguel': 21,
+            'valdson': 27,
+            'ozzy': 19
+            }
+        print(
+            '-' * 8,
+            'FAVORITE NUMBERS',
+            '-' * 8
+        )
+        for name, number in favorite_numbers.items():
+            print(
+                name.title() +
+                "'s favorite number is",
+                str(number) + '.'
+            )
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 6-3 Glossary</h2>
+            <p><pre><code>
+        glossary = {
+            'list': 'A list is a collection of items in a particular order.',
+            'range': "Python's range() function makes it easy to generate a series of numbers",
+            'tuple': 'In Python, tuples are very similar to lists, however, unlike lists, they are immutable.',
+            'for': 'A for loop acts like an iterator in Python, it goes through items that are in a sequence or any other iterable item.',
+            'if': 'If in Python allows us to tell the computer to perform alternative actions based on a given result set.'
+            }
+        print(
+            '-' * 10,
+            'GLOSSARY',
+            '-' * 10
+        )
+        for key, values in glossary.items():
+            print(
+                key.title() + ':',
+                '\n\t' + values + '\n'
+            )
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 6-4 Glossary 2_1</h2>
+            <p><pre><code>
+        glossary = {
+            'list': 'A list is a collection of items in a particular order.',
+            'range': "Python's range() function makes it easy to generate a series of numbers",
+            'tuple': 'In Python, tuples are very similar to lists, however, unlike lists, they are immutable.',
+            'for': 'A for loop acts like an iterator in Python, it goes through items that are in a sequence or any other iterable item.',
+            'if': 'If in Python allows us to tell the computer to perform alternative actions based on a given result set.'
+            }
+        print(
+            '-' * 10,
+            'GLOSSARY',
+            '-' * 10
+        )
+        for key in glossary.keys():
+            print(
+                key.title() + '\n'
+            )                
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 6-4 Glossary 2_2</h2>
+            <p><pre><code>
+        glossary = {
+            'list': 'A list is a collection of items in a particular order.',
+            'range': "Python's range() function makes it easy to generate a series of numbers",
+            'tuple': 'In Python, tuples are very similar to lists, however, unlike lists, they are immutable.',
+            'for': 'A for loop acts like an iterator in Python, it goes through items that are in a sequence or any other iterable item.',
+            'if': 'If in Python allows us to tell the computer to perform alternative actions based on a given result set.'
+            }
+        print(
+            '-' * 10,
+            'GLOSSARY',
+            '-' * 10
+        )
+        for values in glossary.values():
+            print(
+                values + '\n'
+            )
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 6-4 Glossary 2_3</h2>
+            <p><pre><code>
+        glossary = {
+            'list': 'A list is a collection of items in a particular order.',
+            'range': "Python's range() function makes it easy to generate a series of numbers",
+            'tuple': 'In Python, tuples are very similar to lists, however, unlike lists, they are immutable.',
+            'for': 'A for loop acts like an iterator in Python, it goes through items that are in a sequence or any other iterable item.',
+            'if': 'If in Python allows us to tell the computer to perform alternative actions based on a given result set.',
+            'strings': 'Strings are used in Python to record text information such as names or phrases.',
+            'dictionary': 'A python dictionary consists of a key and then an associated value.',
+            'sets': 'Sets are an unordered collection of unique elements.'
+            }
+        print(
+            '-' * 10,
+            'GLOSSARY',
+            '-' * 10
+        )
+        for key, values in glossary.items():
+            print(
+                key.title() + ':',
+                '\n\t' + values + '\n'
+            )
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 6-5 Rivers 1</h2>
+            <p><pre><code>
+        rivers = {
+            'san francisco': 'brazil',
+            'amazonas': 'brazil',
+            'parana': 'brazil'
+        }
+        for river, about in rivers.items():
+            print(
+                '\n',
+                river.title(),
+                'River crosses',
+                about.title()
+            )
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 6-5 Rivers 2</h2>
+            <p><pre><code>
+        rivers = {
+            'san francisco': 'also known as old Chico',
+            'amazonas': 'the largest Brazilian river.',
+            'parana': 'the eighth longest river in the world by length.'
+        }
+        for river, about in rivers.items():
+            print(
+                '\n' + river.title(),
+                'River is',
+                about
+            )
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 6-6 Polling</h2>
+            <p><pre><code>
+        people = [
+            'claudia',
+            'vinicius',
+            'michel',
+            'valdson',
+            'ozzy'
+        ]
+        polling = {
+            'claudia': 'python',
+            'vinicius': 'qlik sense',
+            'valdson': 'python'
+        }
+        print(
+            '-' * 10,
+            'POLLING',
+            '-' * 10
+        )
+        for person in people:
+            if person in polling:
+                print(
+                    '\n' + person.title(),
+                    'thanks for answering the poll.'
+                )
+            else:
+                print(
+                    '\n' + person.title() +
+                    ': Please answer the poll.'
+                )
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 6-7 People</h2>
+            <p><pre><code>
+        person_0 = {
+            'first_name': 'claudia',
+            'last_name': 'santos',
+            'age': 35,
+            'city': 'maceio'
+            }
+        person_1 = {
+            'first_name': 'vinicius',
+            'last_name': 'alves',
+            'age': 25,
+            'city': 'maceio'
+            }
+        person_2 = {
+            'first_name': 'valdson',
+            'last_name': 'mota',
+            'age': 40,
+            'city': 'maceio'
+            }
+        people = [person_0, person_1, person_2]
+        for person in people:
+            full_name = person['first_name'] + ' ' + person['last_name']
+            age = person['age']
+            city = person['city']
+            print(
+                '\nFull name:', full_name.title(),
+                '\nAge:', age,
+                '\nCity:', city.title()
+            )
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 6-8 Pets</h2>
+            <p><pre><code>
+        ozzy = {
+            'name': 'ozzy',
+            'kind': 'cat',
+            'mom': 'claudia'
+        }
+        little_black = {
+            'name': 'little black',
+            'kind': 'dog',
+            'mom': 'cristina'
+        }
+        pets = [ozzy, little_black]
+        for pet in pets:
+            name = pet['name']
+            kind = pet['kind']
+            mom = pet['mom']
+            print(
+                '\nName:', name.title(),
+                '\nKind:', kind.title(),
+                '\nMom:', mom.title()
+            )
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 6-9 Favorite Places</h2>
+            <p><pre><code>
+        favorite_places = {
+            'claudia': [
+                'maceio',
+                'gold coast',
+                'melbourne',
+                'new york'
+            ],
+            'vinicius': [
+                'maceio'
+            ],
+            'valdson': [
+                'gold coast',
+                'brisbane',
+                'vancouver',
+                'new york'
+            ]
+        }
+        print(
+            '-' * 10,
+            'FAVORITE PLACES',
+            '-' * 10
+        )
+        for person, places in favorite_places.items():
+            if len(places) > 1:
+                print(
+                    '\n' + person.title() +
+                    "'s favorite places are:"
+                )
+                for city in places:
+                    print(
+                        '\t' + city.title()
+                    )
+            else:
+                print(
+                    '\n' + person.title() +
+                    "'s favorite places is:"
+                )
+                for city in places:
+                    print(
+                        '\t' + city.title()
+                    )
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 6-10 Favorite Numbers</h2>
+            <p><pre><code>
+        favorite_numbers = {
+            'claudia': [
+                1, 10, 11, 20, 21, 30
+            ],
+            'vinicius': [
+                2, 9, 12, 19, 22, 81
+            ],
+            'miguel': [
+                3, 8, 13, 18, 23, 21
+            ],
+            'valdson': [
+                9, 10, 27, 30, 32, 37
+            ],
+            'ozzy': [
+                5, 6, 15, 16, 19, 25
+            ]
+            }
+        print('-' * 8, 'FAVORITE NUMBERS', '-' * 8)
+        for name, number in favorite_numbers.items():
+            print(
+                name.title() +
+                "'s favorite number are:",
+                str(number) + '.'
+            )
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 6-11 Cities</h2>
+            <p><pre><code>
+        cities = {
+            'brisbane': {
+                'country': 'australia',
+                'population': '2,28 millions',
+                'fact': 'Capital of Queensland, it is a large city on the banks of the Brisbane River'
+            },
+            'gold coast': {
+                'country': 'australia',
+                'population': '540 thousand',
+                'fact': 'A metropolitan region south of Brisbane on the east coast of Australia.'
+            },
+            'vancouver': {
+                'country': 'canada',
+                'population': '675 thousand',
+                'fact': "A bustling port city on British Columbia's west coast, it is among Canada's densest and most ethnically diverse cities."
+            }
+        }
+        for city, information in cities.items():
+            print(
+                '\n' + city.title() + ':'
+            )
+            for info, description in information.items():
+                print(
+                    '\t' + info.title() + ':',
+                    description.title()
+                )
+            </code></pre></p>
+        </article>
+        <article>
+            <hr color="#c9d1e4" />
+            <h2>Exercise 6-12 Extensions</h2>
+            <p><pre><code>
+        cities = {
+            'maceio': {
+                'country': 'brazil',
+                'population': '1,025 millions',
+                'fact': 'Maceió, is the capital of the state of Alagoas, on the east coast of Brazil.'
+            },
+            'gunga beach': {
+                'country': 'brazil',
+                'population': '-',
+                'fact': 'Gunga Beach is located 20 miles south of Maceió, Alagoas. It is considered one of the most beautiful beaches in Brazil.'
+            },
+            'maragogi': {
+                'country': 'brazil',
+                'population': '33 thousand',
+                'fact': 'Maragogi is a resort town on the coast of the Atlantic Ocean in eastern Brazil. It is known for its long beaches like Burgalhau, near the River of Paus.'
+            }
+        }
+        for city, information in cities.items():
+            print(
+                '\n' + city.title() + ':'
+            )
+            for info, description in information.items():
+                print(
+                    '\t' + info.title() + ':',
+                    description.title()
+                )
+            </code></pre></p>
+        </article>
+        <article>
+            <h2></h2>
+            <a href="python-studies.html"><img src="../imgs/botao_voltar.png" alt="Voltar"></a>
+        </article>
+    </main>
+    <img class="center" src="../front/botton_pages.png" alt="Botton">
+</body>
+</html>
